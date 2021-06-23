@@ -10,7 +10,7 @@ env:
   CARGO_TERM_COLOR: always
   API: ${{ secrets.API }}
   API_SECRET: ${{ secrets.API_SECRET }}
-  BEAKER: ${{ secrets.BEARER }}
+  BEARER: ${{ secrets.BEARER }}
 
 jobs:
   build:
