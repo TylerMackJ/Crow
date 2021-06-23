@@ -1,3 +1,6 @@
+#[cfg(test)]
+mod tests;
+
 use std::env;
 
 struct Flags {
@@ -6,12 +9,8 @@ struct Flags {
 }
 
 fn main() {
-    //parse_args(env::args().collect());
-
-    match env::var("API") {
-        Ok(val) => println!("{:?}", val),
-        Err(e) => println!("{}", e),
-    }
+    parse_args(env::args().collect());
+    return
 }
 
 fn parse_args(mut args: Vec<String>) -> Flags {
