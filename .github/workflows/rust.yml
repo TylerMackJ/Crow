@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Get Dbus
-      run: sudo apt-get install libdbus-1
+      run: sudo apt-get install libdbus-1-dev
     
     - name: Build
       run: cargo build --verbose --release
